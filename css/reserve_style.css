@@ -1,0 +1,50 @@
+:root {
+    --body-background-color: #242423;
+    --navlink-text-color: darkgray;
+    --card-background-color: #333533;
+}
+
+body {
+    background-color: var(--body-background-color)
+}
+
+li.nav-item a {
+    color: var(--navlink-text-color);
+    margin-right: 5px;
+    font-size: 1.1em;
+}
+
+
+#logo {
+    font-size: 1.5em;
+}
+
+.myBackground {
+    background-image: url(../images/hero.jpg);
+    background-position: center;
+}
+
+/* form */
+#apt {
+    margin-top: -30px;
+}
+
+@media (min-width:768px) {
+    #apt {
+        margin-top: 7.8px;
+    }
+}
+
+/* footer */
+#footerBanner {
+    background-color: var(--card-background-color);
+    color: var(--navlink-text-color);
+}
+
+.smContainer a i {
+    color: var(--navlink-text-color);
+}
+
+.footerLink {
+    color: var(--navlink-text-color);
+}

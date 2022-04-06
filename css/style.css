@@ -1,0 +1,69 @@
+:root {
+    --body-background-color: #242423;
+    --navlink-text-color: darkgray;
+    --card-background-color: #333533;
+}
+
+body {
+    background-color: var(--body-background-color)
+}
+
+li.nav-item a {
+    color: var(--navlink-text-color);
+    margin-right: 5px;
+    font-size: 1.1em;
+}
+
+
+#logo {
+    font-size: 1.5em;
+}
+
+.myBackground {
+    background-image: url(../images/hero.jpg);
+    background-position: center;
+}
+
+.card {
+    background-color: var(--card-background-color);
+}
+
+.aboutBackground {
+    background-color: var(--card-background-color);
+    border-radius: 4px;
+}
+
+#aboutImage {
+    max-height: 425px;
+    max-width: auto;
+    border-radius: 4px;
+    padding-top: 55px;
+}
+
+.accordion-item {
+    border: 1px solid #aaa;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--navlink-text-color);
+    background: var(--card-background-color);
+}
+
+.accordion-button:not(.collapsed)::after {
+    filter: brightness(0%) invert(70%);
+}
+
+/* footer */
+
+#footerBanner {
+    background-color: var(--card-background-color);
+    color: var(--navlink-text-color);
+}
+
+.smContainer a i {
+    color: var(--navlink-text-color);
+}
+
+.footerLink {
+    color: var(--navlink-text-color);
+}

@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/725a23138f.js" crossorigin="anonymous"></script>
+    
+        <title>Reserve a Bay's Bass</title>
+        <link rel="stylesheet" href="css/reserve_style.css">
+    </head>
+
+<body>
+
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" id="logo" href="index.html">Bay's Bass</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reserve">Reserve A Bass</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html#faq">Frequently Asked Questions</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- hero -->
+
+    <div class="px-4 py-5 my-5 text-center myBackground">
+        <h1 class="display-5 fw-bold text-white">Centered hero</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4 text-white">Quickly design and customize responsive mobile-first sites with Bootstrap,
+                the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive
+                grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+        </div>
+    </div>
+
+
+    <!-- form -->
+
+    <div class="container">
+        <form id="form" action="#nowhere" method="GET">
+            <h2 class="text-light">Personal Information</h2>
+            <!-- Name and email-->
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label for="firstName" class="form-label text-light">First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                </div>
+                <div class="mb-3 col-md-3 col-6">
+                    <label for="lastName" class="form-label text-light">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="email" class="form-label text-light">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="JohnDoe@internet.com">
+                </div>
+            </div>
+
+
+            <!-- address -->
+
+            <div class="row g-3">
+                <div class="col-md-10">
+                    <label for="address" class="form-label text-light">Street Address</label>
+                    <input type="address" class="form-control mb-2" id="address" placeholder="123 Main St.">
+                </div>
+                <div class="col-md-2 mb-3">
+                    <label for="apt"></label>
+                    <input type="address" class="form-control" id="apt" placeholder="Apt">
+                </div>
+            </div>
+
+
+            <!-- city, state, zipcode -->
+            <div class="row g-3">
+                <!-- city -->
+                <div class="col-md-6">
+                    <label for="city" class="form-label text-light">City</label>
+                    <input type="text" class="form-control" id="city" placeholder="San Francisco">
+                </div>
+                <!-- state selector -->
+                <div class="mb-3 col-md-3 col-6">
+                    <label for="state" class="form-label text-light">State</label>
+                    <select id="state" class="form-select">
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="AR">Arkansas</option>
+                        <option value="CA">California</option>
+                        <option value="CO">Colorado</option>
+                        <option value="CT">Connecticut</option>
+                        <option value="DE">Delaware</option>
+                        <option value="DC">District Of Columbia</option>
+                        <option value="FL">Florida</option>
+                        <option value="GA">Georgia</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="ID">Idaho</option>
+                        <option value="IL">Illinois</option>
+                        <option value="IN">Indiana</option>
+                        <option value="IA">Iowa</option>
+                        <option value="KS">Kansas</option>
+                        <option value="KY">Kentucky</option>
+                        <option value="LA">Louisiana</option>
+                        <option value="ME">Maine</option>
+                        <option value="MD">Maryland</option>
+                        <option value="MA">Massachusetts</option>
+                        <option value="MI">Michigan</option>
+                        <option value="MN">Minnesota</option>
+                        <option value="MS">Mississippi</option>
+                        <option value="MO">Missouri</option>
+                        <option value="MT">Montana</option>
+                        <option value="NE">Nebraska</option>
+                        <option value="NV">Nevada</option>
+                        <option value="NH">New Hampshire</option>
+                        <option value="NJ">New Jersey</option>
+                        <option value="NM">New Mexico</option>
+                        <option value="NY">New York</option>
+                        <option value="NC">North Carolina</option>
+                        <option value="ND">North Dakota</option>
+                        <option value="OH">Ohio</option>
+                        <option value="OK">Oklahoma</option>
+                        <option value="OR">Oregon</option>
+                        <option value="PA">Pennsylvania</option>
+                        <option value="RI">Rhode Island</option>
+                        <option value="SC">South Carolina</option>
+                        <option value="SD">South Dakota</option>
+                        <option value="TN">Tennessee</option>
+                        <option value="TX">Texas</option>
+                        <option value="UT">Utah</option>
+                        <option value="VT">Vermont</option>
+                        <option value="VA">Virginia</option>
+                        <option value="WA">Washington</option>
+                        <option value="WV">West Virginia</option>
+                        <option value="WI">Wisconsin</option>
+                        <option value="WY">Wyoming</option>
+                    </select>
+                </div>
+                <!-- zipcode -->
+                <div class="mb-3 col-md-3 col-6">
+                    <label for="zip" class="form-label">ZIP Code</label>
+                    <input type="text" class="form-control" id="zip" placeholder="94016">
+                </div>
+            </div>
+
+            <!-- Bass options -->
+            <h2 class="text-light">Bass Options</h2>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label for="style" class="form-label text-light">Style</label>
+                    <select id="style" class="form-select">
+                        <option value="jazz">Jazz</option>
+                        <option value="precision">Precision</option>
+                    </select>
+                </div>
+                <!-- Fingerboard -->
+                <div class="col-md-3 col-6">
+                    <label for="fingerboard" class="form-label text-light">Fingerboard</label>
+                    <select id="fingerboard" class="form-select">
+                        <option value="ebony">Ebony</option>
+                        <option value="maple">Maple</option>
+                        <option value="rosewood">Rosewood</option>
+                    </select>
+                </div>
+                 <!-- color -->
+                 <div class="mb-3 col-md-3 col-6">
+                    <label for="bassColor" class="form-label text-light">Paint Color</label>
+                    <input type="color" class="form-control form-control-color" id="bassColor"
+                        value="#260b90" title="Choose your color">
+                </div>
+            </div>
+    
+
+    <button type="submit" class="btn btn-primary mb-3">Reserve Now!</button>
+
+    </form>
+    </div>
+
+    <!-- footer -->
+    <section>
+        <!-- Footer -->
+        <footer class="page-footer font-small blue-grey lighten-5">
+
+            <div id="footerBanner">
+                <div class="container">
+
+                    <!-- Grid row-->
+                    <div class="row py-4 d-flex align-items-center">
+
+                        <!-- Grid column -->
+                        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                            <h6 class="mb-0">Get connected with us on social networks!</h6>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-6 col-lg-7 text-center text-md-right smContainer">
+
+                            <!-- Facebook -->
+                            <a class="fb-ic">
+                                <i class="fab fa-facebook-f white-text mr-4"> </i>
+                            </a>
+                            <!-- Twitter -->
+                            <a class="tw-ic">
+                                <i class="fab fa-twitter white-text mr-4"> </i>
+                            </a>
+                            <!-- Google +-->
+                            <a class="gplus-ic">
+                                <i class="fab fa-google-plus-g white-text mr-4"> </i>
+                            </a>
+                            <!--Linkedin -->
+                            <a class="li-ic">
+                                <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                            </a>
+                            <!--Instagram-->
+                            <a class="ins-ic">
+                                <i class="fab fa-instagram white-text"> </i>
+                            </a>
+
+                        </div>
+                        <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row-->
+
+                </div>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left mt-5">
+
+                <!-- Grid row -->
+                <div class="row mt-3 text-light">
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+
+                        <!-- Content -->
+                        <h6 class="text-uppercase font-weight-bold">Company name</h6>
+                        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit
+                            amet,
+                            consectetur
+                            adipisicing elit.</p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <!-- Links -->
+                        <h6 class="text-uppercase font-weight-bold">Products</h6>
+                        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <p>
+                            <a class="footerLink" href="#!">MDBootstrap</a>
+                        </p>
+                        <p>
+                            <a class="footerLink" href="#!">MDWordPress</a>
+                        </p>
+                        <p>
+                            <a class="footerLink" href="#!">BrandFlow</a>
+                        </p>
+                        <p>
+                            <a class="footerLink" href="#!">Bootstrap Angular</a>
+                        </p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                        <!-- Links -->
+                        <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+                        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <p>
+                            <a class="footerLink" href="#!">Your Account</a>
+                        </p>
+                        <p>
+                            <a class="footerLink" href="#!">Become an Affiliate</a>
+                        </p>
+                        <p>
+                            <a class="footerLink" href="#!">Shipping Rates</a>
+                        </p>
+                        <p>
+                            <a class="footerLink" href="#!">Help</a>
+                        </p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                        <!-- Links -->
+                        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+                        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                        <p>
+                            <i class="fas fa-home mr-3"></i> New York, NY 10012, US
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope mr-3"></i> info@example.com
+                        </p>
+                        <p>
+                            <i class="fas fa-phone mr-3"></i> + 01 234 567 88
+                        </p>
+                        <p>
+                            <i class="fas fa-print mr-3"></i> + 01 234 567 89
+                        </p>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row -->
+
+            </div>
+            <!-- Footer Links -->
+
+            <!-- Copyright -->
+            <div class="footer-copyright text-center text-light py-3">© 2020 Copyright:
+                <a class="footerLink" href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+            </div>
+            <!-- Copyright -->
+
+        </footer>
+    </section>
+
+
+    <!--content end-->
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+        integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+        integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
